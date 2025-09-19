@@ -74,23 +74,7 @@
                 }
                 .animate-slide-in { animation: slide-in 0.2s cubic-bezier(0.4,0,0.2,1); }
             </style>
-            <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    const menuBtn = document.getElementById('mobile-menu-button');
-                    const menu = document.getElementById('mobile-menu');
-                    const closeBtn = document.getElementById('mobile-menu-close');
-                    menuBtn.addEventListener('click', () => {
-                        menu.classList.remove('hidden');
-                    });
-                    closeBtn.addEventListener('click', () => {
-                        menu.classList.add('hidden');
-                    });
-                    // Optional: close menu when clicking outside
-                    menu.addEventListener('click', (e) => {
-                        if (e.target === menu) menu.classList.add('hidden');
-                    });
-                });
-            </script>
+            <script src="./assets/js/menu.js"></script>
         </div>
     </header>
 
