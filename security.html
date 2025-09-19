@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security & Data Protection — SecureTickets</title>
+    <meta name="description" content="Learn about SecureTickets' comprehensive security measures, data protection protocols, and industry-leading safety standards.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#10b981',
+                        success: '#059669'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <span class="ml-2 text-xl font-bold text-gray-900">SecureTickets</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary">Home</a>
+                    <a href="how-escrow-works.html" class="text-gray-600 hover:text-primary">How It Works</a>
+                    <a href="security.html" class="text-primary font-semibold">Security</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-primary">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center px-4 py-2 bg-white rounded-full shadow-sm border border-gray-200 mb-8">
+                <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-sm font-medium text-gray-700">Bank-Level Security • PCI Compliant • SOC 2 Certified</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-balance">
+                <span class="text-primary">Security</span> & Data Protection
+            </h1>
+            
+            <p class="text-xl text-gray-600 mb-8 text-pretty">
+                Your security is our top priority. Learn about the comprehensive measures we take to protect your data, payments, and transactions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Security Overview -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Multi-Layer Security Architecture</h2>
+                <p class="text-xl text-gray-600">Comprehensive protection at every level</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">256-Bit SSL Encryption</h3>
+                    <p class="text-gray-600">All data transmission is protected with military-grade encryption, ensuring your information stays private and secure.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">PCI DSS Compliance</h3>
+                    <p class="text-gray-600">Payment processing meets the highest industry standards for handling credit card information securely.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border">
+                    <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Identity Verification</h3>
+                    <p class="text-gray-600">Advanced KYC processes ensure all users are verified, reducing fraud and protecting the marketplace.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Fraud Detection</h3>
+                    <p class="text-gray-600">AI-powered systems monitor transactions 24/7 to detect and prevent fraudulent activity in real-time.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Secure Infrastructure</h3>
+                    <p class="text-gray-600">Cloud-based architecture with redundant systems, regular backups, and 99.9% uptime guarantee.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border">
+                    <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Access Controls</h3>
+                    <p class="text-gray-600">Multi-factor authentication, role-based permissions, and regular access reviews protect sensitive data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Protection -->
+    <section class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Data Protection Standards</h2>
+                <p class="text-xl text-gray-600">How we safeguard your personal information</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Data Encryption & Storage</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Encryption at Rest</h4>
+                                <p class="text-gray-600">All stored data is encrypted using AES-256 encryption with regularly rotated keys.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Secure Transmission</h4>
+                                <p class="text-gray-600">TLS 1.3 encryption protects all data in transit between your device and our servers.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Data Minimization</h4>
+                                <p class="text-gray-600">We collect only necessary information and delete data when no longer needed.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Geographic Distribution</h4>
+                                <p class="text-gray-600">Data is stored across multiple secure data centers with geographic redundancy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 border">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-6">Security Certifications</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-900">SOC 2 Type II</span>
+                            <span class="text-accent font-semibold">Certified</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-900">PCI DSS Level 1</span>
+                            <span class="text-accent font-semibold">Compliant</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-900">ISO 27001</span>
+                            <span class="text-accent font-semibold">Certified</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-900">GDPR</span>
+                            <span class="text-accent font-semibold">Compliant</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-900">CCPA</span>
+                            <span class="text-accent font-semibold">Compliant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Monitoring -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">24/7 Security Monitoring</h2>
+                <p class="text-xl text-gray-600">Continuous protection and threat detection</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Real-Time Monitoring</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            <span class="text-gray-700">Automated threat detection systems</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            <span class="text-gray-700">Suspicious activity alerts</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            <span class="text-gray-700">Network traffic analysis</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            <span class="text-gray-700">Intrusion detection systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Incident Response</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            <span class="text-gray-700">24/7 security operations center</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            <span class="text-gray-700">Rapid response protocols</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            <span class="text-gray-700">Automated threat mitigation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            <span class="text-gray-700">User notification systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Best Practices -->
+    <section class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Your Security Responsibilities</h2>
+                <p class="text-xl text-gray-600">How you can help keep your account secure</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm border">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Strong Passwords</h3>
+                    <p class="text-gray-600">Use unique, complex passwords and enable two-factor authentication for maximum security.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Verify Communications</h3>
+                    <p class="text-gray-600">Always verify emails claiming to be from us. We'll never ask for passwords via email.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border">
+                    <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Monitor Activity</h3>
+                    <p class="text-gray-600">Regularly review your account activity and report any suspicious transactions immediately.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Secure Connections</h3>
+                    <p class="text-gray-600">Always access your account from secure networks and avoid public Wi-Fi for transactions.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Report Issues</h3>
+                    <p class="text-gray-600">Contact us immediately if you notice any unauthorized activity or security concerns.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border">
+                    <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Keep Updated</h3>
+                    <p class="text-gray-600">Keep your devices and browsers updated with the latest security patches and updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Questions About Security?</h2>
+            <p class="text-xl text-blue-100 mb-8">Our security team is available to address any concerns or questions</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg">
+                    Contact Security Team
+                </a>
+                <a href="mailto:security@securetickets.com" class="border-2 border-white hover:bg-white hover:text-primary text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                    security@securetickets.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <span class="ml-2 text-xl font-bold">SecureTickets</span>
+                    </div>
+                    <p class="text-gray-400">The trusted marketplace for safe ticket purchases with escrow protection.</p>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">How It Works</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="how-escrow-works.html" class="hover:text-white">How Escrow Works</a></li>
+                        <li><a href="buyer-protection.html" class="hover:text-white">Buyer Protection Policy</a></li>
+                        <li><a href="seller-verification.html" class="hover:text-white">Seller Verification</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="pricing.html" class="hover:text-white">Pricing & Fees</a></li>
+                        <li><a href="support.html" class="hover:text-white">Support Center</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="terms.html" class="hover:text-white">Terms & Privacy</a></li>
+                        <li><a href="security.html" class="hover:text-white">Security</a></li>
+                        <li><a href="compliance.html" class="hover:text-white">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 SecureTickets. All rights reserved. Escrow-protected ticket marketplace.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
