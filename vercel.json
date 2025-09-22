@@ -1,6 +1,4 @@
 {
-  "public": true,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/$1" }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false
 }
