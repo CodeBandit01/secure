@@ -25,52 +25,66 @@
     <!-- Header -->
     <header class="bg-white shadow-sm border-b">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center flex-shrink-0">
                     <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                         <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
                     <span class="ml-2 text-xl font-bold text-gray-900">SecureTickets</span>
                 </div>
+                <!-- Desktop Nav -->
                 <nav class="hidden md:flex space-x-8">
-                    <a href="home.html" class="text-gray-600 hover:text-primary">Home</a>
-                    <a href="how-escrow-works.html" class="text-gray-600 hover:text-primary">How It Works</a>
-                    <a href="support.html" class="text-gray-600 hover:text-primary">Support</a>
-                    <a href="contact.html" class="text-gray-600 hover:text-primary">Contact</a>
+                    <a href="./how-escrow-works.html" class="text-gray-600 hover:text-primary">How It Works</a>
+                    <a href="#features" class="text-gray-600 hover:text-primary">Features</a>
+                    <a href="#faq" class="text-gray-600 hover:text-primary">FAQ</a>
+                    <a href="./support.html" class="text-gray-600 hover:text-primary">Support</a>
                 </nav>
-                <!-- Mobile Hamburger -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none" aria-label="Open menu">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
+                <!-- Hamburger (mobile) -->
+                <button id="mobile-menu-button" class="md:hidden ml-auto text-gray-700 hover:text-primary focus:outline-none" aria-label="Open menu">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
             </div>
-            <!-- Mobile Menu (hidden by default) -->
-            <div id="mobile-menu" class="md:hidden fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden">
-                <div class="absolute top-0 right-0 w-64 h-full bg-white shadow-lg p-8 flex flex-col space-y-6 animate-slide-in">
-                    <button id="mobile-menu-close" class="self-end text-gray-500 hover:text-primary focus:outline-none" aria-label="Close menu">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                    <a href="how-escrow-works.html" class="text-lg font-medium text-gray-700 hover:text-primary">How It Works</a>
-                    <a href="#features" class="text-lg font-medium text-gray-700 hover:text-primary">Features</a>
-                    <a href="#faq" class="text-lg font-medium text-gray-700 hover:text-primary">FAQ</a>
-                    <a href="support.html" class="text-lg font-medium text-gray-700 hover:text-primary">Support</a>
-                </div>
+        </div>
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="md:hidden fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden">
+            <div class="absolute top-0 right-0 w-64 h-full bg-white shadow-lg p-8 flex flex-col space-y-6 animate-slide-in">
+                <button id="mobile-menu-close" class="self-end text-gray-500 hover:text-primary focus:outline-none"
+                    aria-label="Close menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <a href="home.html" class="text-lg font-medium text-gray-700 hover:text-primary">Home</a>
+                <a href="how-escrow-works.html" class="text-lg font-medium text-gray-700 hover:text-primary">How Escrow Works</a>
+                <a href="buyer-protection.html" class="text-lg font-medium text-gray-700 hover:text-primary">Buyer Protection</a>
+                <a href="pricing.html" class="text-lg font-medium text-gray-700 hover:text-primary">Pricing & Fees</a>
+                <a href="compliance.html" class="text-lg font-medium text-gray-700 hover:text-primary">Compliance</a>
+                <a href="security.html" class="text-lg font-medium text-gray-700 hover:text-primary">Security</a>
+                <a href="support.html" class="text-lg font-medium text-gray-700 hover:text-primary">Support Center</a>
+                <a href="contact.html" class="text-lg font-medium text-gray-700 hover:text-primary">Contact Us</a>
             </div>
-            <style>
-                @keyframes slide-in {
-                    from { transform: translateX(100%); opacity: 0; }
-                    to { transform: translateX(0); opacity: 1; }
+        </div>
+        <style>
+            @keyframes slide-in {
+                from {
+                    transform: translateX(100%);
+                    opacity: 0;
                 }
-                .animate-slide-in { animation: slide-in 0.2s cubic-bezier(0.4,0,0.2,1); }
-            </style>
-            <script src="./assets/js/menu.js"></script>
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            .animate-slide-in {
+                animation: slide-in 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        </style>
+        <script src="./assets/js/menu.js"></script>
     </header>
 
     <!-- Hero Section -->
