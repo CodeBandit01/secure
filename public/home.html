@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Tickets Safely — Escrow-Protected & Verified</title>
+    <title>Buy Tickets Safely, Escrow-Protected & Verified</title>
     <meta name="description"
         content="Buy event tickets safely with our verified escrow service. Face-value prices, secure payment options, and guaranteed ticket delivery — no scams, fast transfers.">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -37,69 +37,36 @@
                     </div>
                     <span class="ml-2 text-xl font-bold text-gray-900">SecureTickets</span>
                 </div>
-                <!-- Desktop Nav -->
                 <nav class="hidden md:flex space-x-8">
                     <a href="./how-escrow-works.html" class="text-gray-600 hover:text-primary">How It Works</a>
                     <a href="#features" class="text-gray-600 hover:text-primary">Features</a>
                     <a href="#faq" class="text-gray-600 hover:text-primary">FAQ</a>
                     <a href="./support.html" class="text-gray-600 hover:text-primary">Support</a>
                 </nav>
-                <!-- Mobile Hamburger -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none"
-                        aria-label="Open menu">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
             </div>
-            <!-- Mobile Menu (hidden by default) -->
-            <div id="mobile-menu" class="md:hidden fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden">
-                <div
-                    class="absolute top-0 right-0 w-64 h-full bg-white shadow-lg p-8 flex flex-col space-y-6 animate-slide-in">
-                    <button id="mobile-menu-close" class="self-end text-gray-500 hover:text-primary focus:outline-none"
-                        aria-label="Close menu">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                    <a href="./how-escrow-works.html" class="text-lg font-medium text-gray-700 hover:text-primary">How
-                        It Works</a>
-                    <a href="#features" class="text-lg font-medium text-gray-700 hover:text-primary">Features</a>
-                    <a href="#faq" class="text-lg font-medium text-gray-700 hover:text-primary">FAQ</a>
-                    <a href="./support.html" class="text-lg font-medium text-gray-700 hover:text-primary">Support</a>
-                </div>
-            </div>
-            <style>
-                @keyframes slide-in {
-                    from {
-                        transform: translateX(100%);
-                        opacity: 0;
-                    }
-
-                    to {
-                        transform: translateX(0);
-                        opacity: 1;
-                    }
-                }
-
-                .animate-slide-in {
-                    animation: slide-in 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-                }
-            </style>
-            <script src="./assets/js/menu.js"></script>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="relative bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="https://ik.imagekit.io/dddd/Gemini_Generated_Image_4xwy964xwy964xwy.png"
+                alt="Happy concert-goers with security protection" class="w-full h-full object-cover">
+            <!-- Dark overlay for text contrast -->
+            <div class="absolute inset-0 bg-black/40"></div>
+            <!-- Gradient overlay for fade/blur -->
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-white/70 backdrop-blur-[2px]">
+            </div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="text-center lg:text-left">
                     <!-- Hero Badge -->
                     <div
-                        class="inline-flex items-center px-4 py-2 bg-white rounded-full shadow-sm border border-gray-200 mb-8">
+                        class="inline-flex items-center px-4 py-2 bg-white rounded-full shadow-sm border border-gray-200 mb-8 relative z-10">
                         <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
                                 d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -110,18 +77,18 @@
                     </div>
 
                     <!-- Headline -->
-                    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 text-balance">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 text-balance relative z-10">
                         Buy Tickets Safely, <span class="text-primary">Escrow-Protected</span> & Verified
                     </h1>
 
                     <!-- Subheadline -->
-                    <p class="text-xl text-gray-600 mb-8 max-w-3xl text-pretty">
+                    <p class="text-xl text-gray-200 mb-8 max-w-3xl text-pretty relative z-10">
                         A trusted ticket marketplace with verified sellers, face-value pricing, secure payments, and
                         guaranteed delivery.
                     </p>
 
                     <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 relative z-10">
                         <button
                             class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg">
                             Get Your Ticket Safely Now
@@ -133,32 +100,14 @@
                     </div>
 
                     <!-- Microcopy -->
-                    <p class="text-sm text-gray-500">Escrow-protected. Buyer guarantee. Instant transfers.</p>
-                </div>
-
-                <!-- Added hero image showing happiness, concert, and security -->
-                <div class="relative">
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-                        <img src="https://ik.imagekit.io/dddd/Gemini_Generated_Image_4xwy964xwy964xwy.png"
-                            alt="Happy concert-goers with security protection" class="w-full h-auto object-cover">
-                        <!-- Security overlay badge -->
-                        <div
-                            class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 flex items-center">
-                            <svg class="w-5 h-5 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <span class="text-sm font-semibold text-gray-800">Protected</span>
-                        </div>
-                    </div>
-                    <!-- Floating elements for visual interest -->
-                    <div class="absolute -top-4 -left-4 w-20 h-20 bg-primary/10 rounded-full blur-xl"></div>
-                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-accent/10 rounded-full blur-xl"></div>
+                    <p class="text-sm text-gray-300 relative z-10">Escrow-protected. Buyer guarantee. Instant transfers.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- Trust Signals -->
     <section class="bg-white py-12 border-b">
@@ -207,7 +156,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Ticket Showcase Section -->
     <section class="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -456,7 +404,6 @@
         </div>
     </section>
 
-
     <!-- Hide scrollbar utility -->
     <style>
         .scrollbar-hide::-webkit-scrollbar {
@@ -469,12 +416,14 @@
         }
     </style>
 
+
+
     <!-- Intro Section -->
     <section class="py-16">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-xl text-gray-700 leading-relaxed">
                 Stop worrying about scams and inflated resale prices. Our verified Escrow Service protects every
-                purchase — buyers only pay when tickets are confirmed and delivered. Fast, secure, and transparent.
+                purchase, ensuring buyers only pay when tickets are confirmed and delivered. Fast, secure, and transparent.
             </p>
         </div>
     </section>
