@@ -1,0 +1,9 @@
+/*
+  src/styles/tailwind.css
+  Main Tailwind CSS entrypoint for the project.
+  Import this file in your build pipeline to generate the final CSS.
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
