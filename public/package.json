@@ -1,13 +1,12 @@
+
 {
   "name": "secure-tickets",
   "version": "1.0.0",
-  "description": "Production-ready static site for SecureTickets with Tailwind CSS and modern best practices.",
+  "description": "A static HTML site for Secure Tickets Resale, deployed on Vercel.",
   "scripts": {
-    "build:css": "npx tailwindcss -c tailwind.config.js -i ./src/styles/tailwind.css -o ./public/styles.css --minify"
+    "start": "vercel dev",
+    "build": "echo 'No build step required'"
   },
-  "devDependencies": {
-    "tailwindcss": "^3.4.0",
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.0"
-  }
+  "author": "Bandit",
+  "license": "MIT"
 }
