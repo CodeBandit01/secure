@@ -2,6 +2,7 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/home.html" },
+    { "source": "/pricing", "destination": "/pricing.html" },
     { "source": "/:path", "destination": "/:path.html" }
   ]
 }
