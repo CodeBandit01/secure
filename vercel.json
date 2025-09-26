@@ -1,3 +1,18 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/home.html" },
+    { "source": "/buyer-protection", "destination": "/buyer-protection.html" },
+    { "source": "/compliance", "destination": "/compliance.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/how-escrow-works", "destination": "/how-escrow-works.html" },
+    { "source": "/pricing", "destination": "/pricing.html" },
+    { "source": "/security", "destination": "/security.html" },
+    { "source": "/seller-verification", "destination": "/seller-verification.html" },
+    { "source": "/support", "destination": "/support.html" },
+    { "source": "/terms", "destination": "/terms.html" }
+  ],
+  "redirects": [
+    { "source": "/home", "destination": "/", "permanent": true }
+  ]
 }
