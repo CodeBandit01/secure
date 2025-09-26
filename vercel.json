@@ -1,7 +1,9 @@
 {
   "cleanUrls": true,
-  "routes": [
-    { "src": "/", "dest": "/home.html" },
-    { "src": "/home", "dest": "/" }
+  "rewrites": [
+    { "source": "/", "destination": "/home.html" }
+  ],
+  "redirects": [
+    { "source": "/home", "destination": "/", "permanent": true }
   ]
 }
