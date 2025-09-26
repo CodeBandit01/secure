@@ -1,8 +1,9 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/home.html" },
-    { "source": "/pricing", "destination": "/pricing.html" },
-    { "source": "/:path", "destination": "/:path.html" }
+    { "source": "/", "destination": "/home.html" }
+  ],
+  "redirects": [
+    { "source": "/home", "destination": "/", "permanent": true }
   ]
 }
