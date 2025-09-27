@@ -47,7 +47,7 @@
   ],
   "functions": {
     "api/main.py": {
-      "runtime": "python3.11"
+      "runtime": "vercel-python@3.12.1"
     }
   }
 }
