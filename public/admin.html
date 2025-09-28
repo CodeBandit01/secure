@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Admin Homepage</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    #login, #dashboard { max-width: 400px; margin: auto; }
+    #dashboard { display: none; }
+    input, button { display: block; margin: 0.5rem 0; padding: 0.5rem; width: 100%; }
+    ul { padding: 0; }
+    li { list-style: none; margin: 0.25rem 0; }
+  </style>
+</head>
+<body>
+  <div id="login">
+    <h2>Admin Login</h2>
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button onclick="login()">Login</button>
+    <p id="login-error" style="color:red;"></p>
+  </div>
+
+  <div id="dashboard">
+    <h2>Admin Dashboard</h2>
+    <p>Status: <span id="status">Loading...</span></p>
+    <h3>Users:</h3>
+    <ul id="users"></ul>
+    <button onclick="logout()">Logout</button>
+  </div>
+
   <script>
+    const ADMIN_EMAIL = "admin@example.com";
+    const ADMIN_PASS = "password123";
+
+    function login() {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      if (email === ADMIN_EMAIL && password === ADMIN_PASS) {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("dashboard").style.display = "block";
+        loadAdminData();
+      } else {
+        document.getElementById("login-error").textContent = "Invalid login!";
+      }
+    }
+
+    function logout() {
+      document.getElementById("dashboard").style.display = "none";
+      document.getElementById("login").style.display = "block";
+      document.getElementById("email").value = "";
+      document.getElementById("password").value = "";
+    }
+
     async function loadAdminData() {
       try {
-        const res = await fetch("/api/index");
+        const res = await fetch("/api/admin-data");
         const data = await res.json();
         document.getElementById("status").textContent = data.message;
         document.getElementById("users").innerHTML =
@@ -16,13 +66,6 @@
         document.getElementById("status").textContent = "Error fetching data";
       }
     }
-    window.onload = loadAdminData;
   </script>
-</head>
-<body>
-  <h1>Admin Dashboard</h1>
-  <p>Status: <span id="status">Loading...</span></p>
-  <h2>Users</h2>
-  <ul id="users"></ul>
 </body>
 </html>
