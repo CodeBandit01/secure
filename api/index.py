@@ -25,7 +25,7 @@ def read_root():
 
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
-        if self.path == "/api/admin":
+        if self.path == "/api/index":
             self.send_response(200)
             self.send_header("Content-type", "application/json")
             self.end_headers()
