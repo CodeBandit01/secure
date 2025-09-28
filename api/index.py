@@ -17,9 +17,8 @@ app = FastAPI(
 # serve static files
 app.mount("/public", StaticFiles(directory="public"), name="public")
 
-@app.get("/api/hello")
+@app.get("/api")
 def read_root():
     return {"message": "Hello from FastAPI on Vercel!"}
 
-# 👇 this is what Vercel needs
 handler = Mangum(app)
