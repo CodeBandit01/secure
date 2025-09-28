@@ -343,9 +343,9 @@ app = FastAPI(
 app.mount("/public", StaticFiles(directory="public"), name="public")
 
 
-@app.get("/favicon.ico", include_in_schema=False)
+@app.get("/front", include_in_schema=False)
 async def favicon():
-    return FileResponse("public/favicon.ico")
+    return FileResponse("public/index.html")
 
 
 @app.get("/api/data")
