@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Homepage</title>
+  <script>
+    async function loadAdminData() {
+      try {
+        const res = await fetch("/api/index");
+        const data = await res.json();
+        document.getElementById("status").textContent = data.message;
+        document.getElementById("users").innerHTML =
+          data.users.map(u => `<li>${u}</li>`).join("");
+      } catch (err) {
+        console.error(err);
+        document.getElementById("status").textContent = "Error fetching data";
+      }
+    }
+    window.onload = loadAdminData;
+  </script>
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+  <p>Status: <span id="status">Loading...</span></p>
+  <h2>Users</h2>
+  <ul id="users"></ul>
+</body>
+</html>
